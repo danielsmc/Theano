@@ -298,7 +298,8 @@ class NVCC_compiler(object):
                             '--fmad', '--ftz', '--maxrregcount',
                             '--prec-div', '--prec-sqrt',  '--use_fast_math',
                             '-fmad', '-ftz', '-maxrregcount',
-                            '-prec-div', '-prec-sqrt', '-use_fast_math']:
+                            '-prec-div', '-prec-sqrt', '-use_fast_math',
+                            '-ccbin']:
                 if pa.startswith(pattern):
                     preargs1.append(pa)
         preargs2 = [pa for pa in preargs
